@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- bài 1 -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScipt">
+    <meta name="author" content="Huynh Thu">
+
+    <style>
+        #box {
+            position: relative;
+            display: block;
+            width: 500px;
+            height: 300px;
+            background-color: rgb(252, 217, 23);
+        }
+        
+        #caption_table {
+            color: rgb(233, 10, 233);
+        }
+        
+        #table_css {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            border-color: rgb(233, 10, 233);
+            background-color: rgb(255, 204, 238);
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #table_header_empty {
+            background-color: rgb(255, 204, 238);
+        }
+        
+        #table_header {
+            background-color: rgb(241, 166, 231);
+            text-decoration-line: underline;
+        }
+        
+        .td_number {
+            color: #000;
+            background-color: deepskyblue;
+        }
+        
+        .table_body {
+            color: rgb(34, 92, 216);
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- bài 6 -->
+    <!-- c -->
+    <div id="box">
+        <table id="table_css" border="5" Cellpadding="4">
+            <caption id="caption_table">NUMBERS 1-5 in VARIOUS LANGUAGES</caption>
+            <thead id="table_header">
+                <th id="table_header_empty"></th>
+                <th>English</th>
+                <th>Espanol</th>
+                <th>Francais</th>
+                <th>Italiano</th>
+                <th>Deutsch</th>
+            </thead>
+
+            <tbody class="table_body">
+                <tr>
+                    <td class="td_number">1</td>
+                    <td>one</td>
+                    <td>uno</td>
+                    <td>un</td>
+                    <td>uno</td>
+                    <td>eins</td>
+                </tr>
+                <tr>
+                    <td class="td_number">2</td>
+                    <td>two</td>
+                    <td>dos</td>
+                    <td>deux</td>
+                    <td>due</td>
+                    <td>zwei</td>
+                </tr>
+                <tr>
+                    <td class="td_number">3</td>
+                    <td>three</td>
+                    <td>tres</td>
+                    <td>trois</td>
+                    <td>tre</td>
+                    <td>drei</td>
+                </tr>
+                <tr>
+                    <td class="td_number">4</td>
+                    <td>four</td>
+                    <td>cuatro</td>
+                    <td>quatre</td>
+                    <td>quattro</td>
+                    <td>vier</td>
+                </tr>
+                <tr>
+                    <td class="td_number">5</td>
+                    <td>five</td>
+                    <td>cinco</td>
+                    <td>cinq</td>
+                    <td>cinque</td>
+                    <td>funf</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
