@@ -204,11 +204,25 @@
 }
 
 .product {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 267px;
     height: 464px;
+}
+
+.best_sale {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 12px;
+    color: #8c5d11;
+    background-color: #ffc970;
+    border-radius: 14px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0px 6px;
 }
 
 .product .item {
