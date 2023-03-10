@@ -6,7 +6,7 @@
 
 #container {
     display: grid;
-    grid-template-rows: 60px 430px 1876px 435px;
+    grid-template-rows: 60px 430px 1800px 435px;
     height: 2820px;
     width: 1440px;
     --color-main: #459D7A;
@@ -14,6 +14,8 @@
 }
 
 #header {
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: grid;
     grid-template-columns: 132px 350px auto 350px 132px;
     height: 60px;
@@ -323,7 +325,8 @@
     display: inline-block;
     font-size: 14px;
     color: #9095A0FF;
-    padding: 10px 8px;
+    padding: 0px 8px;
+    line-height: 30px;
 }
 
 .nummber li:hover {
@@ -333,4 +336,49 @@
     cursor: pointer;
 }
 
-.footer {}
+.footer {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: rgb(220, 235, 204);
+    display: grid;
+    grid-template-columns: 132px 588px 588px  132px;
+    color: #fff;
+    background-color: #1D2128FF;
+}
+
+.footer_left {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_list p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about_list ul {
+    list-style-type: none;
+}
+
+.about_list ul li {
+    font-size: 14px;
+}
+
+.about_list p, li, select {
+    height: 30px;
+    padding: 3px 30px 3px 0px;
+}
+
+#about {
+    color: #fff;
+    background-color: #1D2128FF;
+    border-radius: 4px;
+}
